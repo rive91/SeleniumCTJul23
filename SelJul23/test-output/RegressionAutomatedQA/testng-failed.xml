@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [RegressionAutomatedQA]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="TC_02_ErrorLock(failed)">
+    <classes>
+      <class name="loginTestCases.TC_01_Login">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTestCases.TC_01_Login -->
+      <class name="loginTestCases.TC_02_ErrorLock">
+        <methods>
+          <include name="TC_01"/>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTestCases.TC_02_ErrorLock -->
+      <class name="inventoryTestCases.TC_03">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- inventoryTestCases.TC_03 -->
+    </classes>
+  </test> <!-- TC_02_ErrorLock(failed) -->
+</suite> <!-- Failed suite [RegressionAutomatedQA] -->
